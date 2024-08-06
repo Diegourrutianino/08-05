@@ -1,0 +1,5 @@
+This document lists the enhancements, fixed issues, and removed or deprecated features for Hazelcast Platform 5.3.6 release. The numbers in the square brackets refer to the issues and pull requests in Hazelcast's GitHub repository.
+
+## Fixes
+
+* Fixed a WAN replication failure - when using maps with WAN replication enabled, and BINARY or NATIVE in-memory formats for the entries, WAN replication was failing when an entry is updated with the same key/value pair, and the cluster members lack serialization information. [#25899]
